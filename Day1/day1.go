@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+const PI = 3.14
+
 func main() {
 	// Print Hello world in console
 	fmt.Println("hello world")
@@ -38,5 +40,12 @@ func main() {
 	fmt.Println(myvar11)
 	fmt.Println(myvar22)
 	fmt.Println(myvar33)
+
+	//Constants
+
+	const abc = "constantString"
+
+	fmt.Println(abc)
+	fmt.Println(PI)
 
 }
