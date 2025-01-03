@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const PI = 3.14
+const PI = 3.14879685
 
 func main() {
 	// Print Hello world in console
@@ -47,5 +47,17 @@ func main() {
 
 	fmt.Println(abc)
 	fmt.Println(PI)
+
+	const Correct = true
+	fmt.Println("Go rules?", Correct)
+
+	// Data Types
+
+	var x uint8 = 225
+
+	fmt.Println(x, x-5)
+	var y int16 = 32767
+
+	fmt.Println(y+2, y-2)
 
 }
