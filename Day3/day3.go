@@ -33,4 +33,20 @@ func main() {
 	a3 := Address{Name: "sham", city: "mumbai"}
 	fmt.Println(a3)
 
+	//nested struct
+
+	type person struct {
+		fName, lname string
+		age          int
+		Address      Address
+	}
+
+	P := person{
+		fName: "ram", lname: "sham", age: 55, Address: Address{city: "pune", pincode: 856452},
+	}
+	fmt.Println(P)
+
+	fmt.Println(P.Address)
+	fmt.Println(P.Address.pincode)
+	fmt.Println(P.lname)
 }
